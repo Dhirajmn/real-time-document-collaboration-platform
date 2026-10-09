@@ -36,7 +36,7 @@ public class Document {
     @Column(nullable = false)
     private LocalDateTime updatedAt;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private long createdBy;
 
 }

@@ -8,6 +8,7 @@ import com.dhiraj.documentservice.repository.DocumentRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 public class DocumentService {
@@ -31,6 +32,39 @@ public class DocumentService {
 
         return documentRepository.save(newDocument);
 
+    }
+
+    public /*Document*/void editDocument(DocumentEditRequestDto request) {
+
+        // check: document exists
+
+        // check: authorized user
+
+    }
+
+    public /*List<Document>*/void getAllDocuments() {
+
+        // check: who is making request
+
+        // get: all documents associated with the authenticated user, regardless of whether their permission is OWNER, EDITOR, or VIEWER.
+    }
+
+    public /*Document*/void getDocument(long id) {
+
+        // check: document exists
+
+        // check: authorized user
+
+        // get: doc
+    }
+
+    public void deleteDocument(long id) {
+
+        // check: document exists
+
+        // check: authorized user
+
+        // delete: if above satisfies
     }
 
 }
